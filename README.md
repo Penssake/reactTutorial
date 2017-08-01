@@ -1,13 +1,10 @@
-# reactTutorial
-Tutorial for introduction to React
+# React using Webpacks & Babel Tutorial
 
-Initial notes
-
-JavaScript framework for creating user interfaces.(library)
-used for SPA
-Component based
-  HTML written in component files
-Fast
+## React
+- JavaScript framework for creating user interfaces.(library)
+- used for SPA
+- Component based (HTML written in component files)
+- Fast
 
 - [x] React written with JSX & ES6 primarily
 - [x] We will be using Babel to translate it to vanilla JavaScript
