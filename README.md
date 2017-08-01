@@ -15,3 +15,5 @@ Use npm to install Babel and React
 
 Sources to remember:
 https://nodejs.org/api/path.html#path_path_resolve_paths
+https://teamtreehouse.com/library/understanding-webpackconfigjs
+https://webpack.js.org/configuration/

@@ -79,12 +79,16 @@ const APP_DIR = path.resolve(__dirname, 'src/client/app');
 //path.win32
     //specific to windows.
 
+//not entirely sure....
 const config = {
-  entry: APP_DIR + '/index.jsx',
-  output: {
+  entry: APP_DIR + '/index.jsx', //application starts executing
+  //and webpack starts bundling
+  output: { //related to how the webpack emits results
     path: BUILD_DIR,
     filename: 'bundle.js'
   }
 };
 
-module.exports = config;
+module.exports = config; //assuming we are using this for reference
+//later and can possibly call it like function considering the contents
+//this file are not global without using module.exports???? 
