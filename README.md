@@ -1,4 +1,4 @@
-# React using Webpacks & Babel Tutorial
+# React using Webpack & Babel Tutorial(s)
 
 ## React
 - JavaScript framework for creating user interfaces.(library)
