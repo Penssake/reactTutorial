@@ -81,14 +81,17 @@ const APP_DIR = path.resolve(__dirname, 'src/client/app');
 
 //not entirely sure....
 const config = {
-  entry: APP_DIR + '/index.jsx', //application starts executing
+  entry: APP_DIR + '/index.jsx', //REVIEW: application starts executing
   //and webpack starts bundling
-  output: { //related to how the webpack emits results
+  output: { //REVIEW: related to how the webpack emits results
     path: BUILD_DIR,
     filename: 'bundle.js'
   }
 };
 
-module.exports = config; //assuming we are using this for reference
-//later and can possibly call it like function considering the contents
-//this file are not global without using module.exports???? 
+module.exports = config; // REVIEW: assuming we are using this for reference
+//later and can possibly call it like a function considering the contents of
+//this file are not global without using module.exports????
+
+
+//TODO:Is it exporting here?? Do I call config later or is it initialized by setting it equal congif down here??? What does IT ALL DO in babe language??
