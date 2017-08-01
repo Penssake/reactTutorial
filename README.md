@@ -9,9 +9,9 @@ Component based
   HTML written in component files
 Fast
 
-React written with JSX & ES6 primarily
-We will be using Babel to translate it to vanilla JavaScript
-Use npm to install Babel and React
+- [x] React written with JSX & ES6 primarily
+- [x] We will be using Babel to translate it to vanilla JavaScript
+- [x] Use npm to install Babel and React
 
 Sources to remember:
 1. The Net Ninja
