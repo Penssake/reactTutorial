@@ -1,0 +1,22 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "react tutorial",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Penssake/reactTutorial.git"
+  },
+  "author": "Christina Thomas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Penssake/reactTutorial/issues"
+  },
+  "homepage": "https://github.com/Penssake/reactTutorial#readme",
+  "dependencies": {
+    "webpack": "^3.4.1"
+  }
+}
