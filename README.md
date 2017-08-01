@@ -12,3 +12,6 @@ Fast
 React written with JSX & ES6 primarily
 We will be using Babel to translate it to vanilla JavaScript
 Use npm to install Babel and React
+
+Sources to remember:
+https://nodejs.org/api/path.html#path_path_resolve_paths
