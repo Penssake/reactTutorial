@@ -14,7 +14,7 @@ We will be using Babel to translate it to vanilla JavaScript
 Use npm to install Babel and React
 
 Sources to remember:
-The Net Ninja
-https://nodejs.org/api/path.html#path_path_resolve_paths
-https://teamtreehouse.com/library/understanding-webpackconfigjs
-https://webpack.js.org/configuration/
+1. The Net Ninja
+2. https://nodejs.org/api/path.html#path_path_resolve_paths
+3. https://teamtreehouse.com/library/understanding-webpackconfigjs
+4. https://webpack.js.org/configuration/
