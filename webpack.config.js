@@ -102,6 +102,8 @@ const config = {
   }
 };
 
+//REVIEW: The loaders property takes an array of loaders(we are only using babel-loader)
+//test property tells it what file extension to process(our index.jsx)
 module.exports = config; // REVIEW: assuming we are using this for reference
 //later and can possibly call it like a function considering the contents of
 //this file are not global without using module.exports????
