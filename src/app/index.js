@@ -81,8 +81,8 @@ class Character extends React.Component {
     return (
       <div>
         <div>{this.state.name}</div>
-        <input type='button' value='PASS' onClick={this.countUp} />
-        <input type='button' value='RETURN' onClick={this.countDown} />
+        <input type='button' value='PASS' onClick={this.nextCharacter} />
+        <input type='button' value='RETURN' onClick={this.lastCharacter} />
       </div>
     );
   }
