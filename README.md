@@ -30,3 +30,5 @@ Sources to remember:
 4. https://webpack.js.org/configuration/
 5. https://www.codementor.io/tamizhvendan/beginner-guide-setup-reactjs-environment-npm-babel-6-webpack-du107r9zr
 6. http://jsx.github.io/
+7. https://github.com/iamshaunjp/react-playlist
+
