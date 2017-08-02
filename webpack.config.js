@@ -82,10 +82,23 @@ const APP_DIR = path.resolve(__dirname, 'src/client/app');
 //not entirely sure....
 const config = {
   entry: APP_DIR + '/index.jsx', //REVIEW: application starts executing
-  //and webpack starts bundling
+  //and webpack starts bundling + HOLDS THE DIRECTORY PATH OF REACTS APPLICATION CODEBASE
   output: { //REVIEW: related to how the webpack emits results
-    path: BUILD_DIR,
+    path: BUILD_DIR, // REPRESENTS THE DIRECTORY PATHOF THE BUNDLE FILE OUTPUT
     filename: 'bundle.js'
+  }
+  module: {
+    loaders: [
+      {
+        test: /\.jsx?/,
+        include: APP_DIR,
+        loader: 'babel-loader',
+        query:
+        {
+          presets:['react']
+        }
+      }
+    ]
   }
 };
 
