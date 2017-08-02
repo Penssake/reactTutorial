@@ -57,9 +57,16 @@ let ReactDOM = require('react-dom');
 class Character extends React.Component {
   constructor(props) {
     super(props);
-    this.state ={name: {character.name}};
+    this.state ={name: {currentCharacter.name}};
+    this.nextCharacter = //currentCharacter + 1
+    this.lastCharacter = //lastCharacter -1
   }
+  componentDidMount() {
 
+  }
+  componentWillUnmount(){
+
+  }
   // function App() {
   //   return (
   //     <div>
@@ -71,12 +78,13 @@ class Character extends React.Component {
   // }
   //
   render() {
-    return {
+    return (
       <div>
-        <h1>Current Character</h1>
-        <h2>{this.state.name}</h2>
+        <div>{this.state.name}</div>
+        <input type='button' value='PASS' onClick={this.countUp} />
+        <input type='button' value='RETURN' onClick={this.countDown} />
       </div>
-    };
+    );
   }
 }
 
