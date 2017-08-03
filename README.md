@@ -22,13 +22,17 @@
 - [x] JSX and ES6 work well with react but there syntax is not universally supported across all browsers.
 - [x] Use Babel-loader to translate the files before bundling them(when using JSX and ES6 in React code)
 
+## React components
+
+
 
 Sources to remember:
-1. The Net Ninja
+2. https://facebook.github.io
+1. The Net Ninja (good for installation/moved to facebook.github.io for writing in React)
 2. https://nodejs.org/api/path.html#path_path_resolve_paths
 3. https://teamtreehouse.com/library/understanding-webpackconfigjs
 4. https://webpack.js.org/configuration/
 5. https://www.codementor.io/tamizhvendan/beginner-guide-setup-reactjs-environment-npm-babel-6-webpack-du107r9zr
 6. http://jsx.github.io/
 7. https://github.com/iamshaunjp/react-playlist
-
+8. https://medium.com/react-ecosystem/how-to-handle-state-in-react-6f2d3cd73a0c

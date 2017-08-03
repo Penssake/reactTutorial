@@ -57,16 +57,18 @@ let ReactDOM = require('react-dom');
 class Character extends React.Component {
   constructor(props) {
     super(props);
-    this.state ={name: {currentCharacter.name}};
-    this.nextCharacter = //currentCharacter + 1
-    this.lastCharacter = //lastCharacter -1
+    this.state ={name: {character.name}};
+    this.nextCharacter = {character.name} += 1;
+    this.lastCharacter = {character.name} -= 1;
   }
   componentDidMount() {
-
+    $getJSON('./data/character.json', (json) => {
+      this.setState({character: json});
+    });
   }
-  componentWillUnmount(){
-
-  }
+  // componentWillUnmount(){
+  //
+  // }
   // function App() {
   //   return (
   //     <div>
@@ -80,7 +82,7 @@ class Character extends React.Component {
   render() {
     return (
       <div>
-        <div>{this.state.name}</div>
+        <div>{this.character.name}</div>
         <input type='button' value='PASS' onClick={this.nextCharacter} />
         <input type='button' value='RETURN' onClick={this.lastCharacter} />
       </div>
