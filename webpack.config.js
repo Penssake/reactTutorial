@@ -1,17 +1,32 @@
-const webpack = require('webpack');
-//REVIEW: require is built into noje.js - it loads your modules
-//Modules are not global. You can export the value of
-//the returns in the file using module.exports
 const path = require('path');
-//REVIEW: path is a module that works with directories and filepaths
-const BUILD_DIR = path.resolve(__dirname, 'src/client/public');
-const APP_DIR = path.resolve(__dirname, 'src/client/app');
-//REVIEW: path.resolve()is a method that resolves a sequence of path segments into an absolute path....
-//the sequence of paths is read right to left
-//if a directory name has not been given as the first parameter the
-//current working diretory is used
-//if no path segments are given, path.resolve()will return the obsolute path of the current working directory.
+//gives path module provided by node.js allowing us to grab the correct paths
+module.exports = {
 
+  entry: path.resolve(__dirname, 'src') + '/app/index.js',
+  //providing entry js file and path. Using path module required above, saying look in current directory, then in the src folder then give index.js file (seems like an over complicated way to write a file path??)
+  output: {
+    path: path.resolve(__dirname, 'dist') + '/app',
+    filename: 'bundle.js',
+    publicPath: '/app/'
+  },
+  module: {
+    loaders: [
+      {
+        test:/\.js$/,
+        include: path.resolve(__dirname, 'src'),
+        loader: 'babel-loader',
+        query: {
+          presets: ['react', 'es2015']
+        }
+      },
+      {
+        test: /\.css$/,
+        loader:'style-loader!css-loader'
+      }
+    ]
+  }
+};
+//we are exporting this module object, it's going to translate
 //Path
 //Windows vs. POSIX(Operating system for unix)
      //When working on a windows machine your path results will
@@ -78,35 +93,3 @@ const APP_DIR = path.resolve(__dirname, 'src/client/app');
     // Returns: ['foo', 'bar', 'baz']
 //path.win32
     //specific to windows.
-
-//not entirely sure....
-const config = {
-  entry: APP_DIR + '/index.jsx', //REVIEW: application starts executing
-  //and webpack starts bundling + HOLDS THE DIRECTORY PATH OF REACTS APPLICATION CODEBASE
-  output: { //REVIEW: related to how the webpack emits results
-    path: BUILD_DIR, // REPRESENTS THE DIRECTORY PATHOF THE BUNDLE FILE OUTPUT
-    filename: 'bundle.js'
-  }
-  module: {
-    loaders: [
-      {
-        test: /\.jsx?/,
-        include: APP_DIR,
-        loader: 'babel-loader',
-        query:
-        {
-          presets:['react']
-        }
-      }
-    ]
-  }
-};
-
-//REVIEW: The loaders property takes an array of loaders(we are only using babel-loader)
-//test property tells it what file extension to process(our index.jsx)
-module.exports = config; // REVIEW: assuming we are using this for reference
-//later and can possibly call it like a function considering the contents of
-//this file are not global without using module.exports????
-
-
-//TODO:Is it exporting here?? Do I call config later or is it initialized by setting it equal congif down here??? What does IT ALL DO in babe language??
